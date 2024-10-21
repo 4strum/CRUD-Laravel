@@ -37,3 +37,14 @@ Executar migrations
 
 php artisan migrate
 ---
+
+Criar Models
+
+php artisan make:models NomeDaModel
+
+php artisan make:model course
+---
+
+Criar um arquivo de request com validações
+
+php artisan make:request NomeDoRequest
