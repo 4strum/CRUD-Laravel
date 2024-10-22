@@ -42,4 +42,22 @@ class UserController extends Controller
 
     }
 
+    public function edit(User $user){
+        return view('user.edit', ['user' => $user]);
+    }
+
+    public function update(UserRequest $request, User $user){
+        // validar dados
+        $request->validated();
+    
+        //Editar as informações 
+        $user->update([
+            'name'=> $request->name,
+            'email' => $request->email,
+            'password' => $request->senha
+        ]);
+
+        // Redirecionar o usuario, enviar mensagem de sucesso
+        return redirect()->route('user.show', ['user' => $user->id])->with('success', 'Usuário cadastrado com sucesso!');
+    }
 }

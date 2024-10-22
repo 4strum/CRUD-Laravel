@@ -11,8 +11,16 @@
 
 
     <a href="{{route('user.index')}}">listar</a><br>
+    <a href="{{route('user.edit', ['user' => $user->id])}}">Editar</a><br>
 
     <h2>Visualizar Usuário</h2>
+    
+    @if (session('success'))
+        <p style="color: #086">
+            {{ session('success') }}
+        </p>
+    
+    @endif
 
     ID : {{ $user->id}} <br>
     name : {{ $user->name}} <br>
