@@ -60,4 +60,12 @@ class UserController extends Controller
         // Redirecionar o usuario, enviar mensagem de sucesso
         return redirect()->route('user.show', ['user' => $user->id])->with('success', 'Usuário cadastrado com sucesso!');
     }
+
+    public function destroy(User $user){
+            // apagar registro do banco
+            $user->delete();
+
+            // redirecionar o usuario, enviar mensagem de sucesso
+            return redirect()->route('user.index')->with('success', 'Usuario deletado com sucesso');
+    }
 }
