@@ -48,3 +48,6 @@ php artisan make:model course
 Criar um arquivo de request com validações
 
 php artisan make:request NomeDoRequest
+
+
+TESTEEEEEEE
