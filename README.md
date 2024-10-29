@@ -2,6 +2,7 @@
 
 *PHP 8.2 ou superior
 *composer
+*node.js 20 ou superior
 
 ## Como rodar o projeto baixado
 
@@ -48,3 +49,22 @@ php artisan make:model course
 Criar um arquivo de request com validações
 
 php artisan make:request NomeDoRequest
+---
+
+Instalar dependencias do node
+
+npm install
+---
+
+
+Instalar o framework Bootstrap 
+
+npm i --save bootstrap @popperjs/core
+
+instalar o sass
+npm i --save-dev sass
+---
+
+Executar as bibliotecas Node.js.
+```
+npm run dev
