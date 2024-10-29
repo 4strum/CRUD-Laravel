@@ -49,6 +49,7 @@ php artisan make:model course
 Criar um arquivo de request com validações
 
 php artisan make:request NomeDoRequest
+<<<<<<< HEAD
 ---
 
 Instalar dependencias do node
@@ -68,3 +69,8 @@ npm i --save-dev sass
 Executar as bibliotecas Node.js.
 ```
 npm run dev
+=======
+
+
+TESTEEEEEEE
+>>>>>>> 2f57cf1ab0bf6a05e098b53046a0e85ecc3e2feb
